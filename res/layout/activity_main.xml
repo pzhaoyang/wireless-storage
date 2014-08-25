@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+        android:text="Wireless Storage"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/toe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="For Wireless Storage."
+        android:textColor="#ff888888" />
+
+    <EditText
+        android:id="@+id/ed_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="16"
+        android:hint="User Name"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:text="pengzhaoyang" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/error_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_above="@+id/ed_user"
+        android:layout_centerHorizontal="true"
+        android:text="用户名或密码错误!"
+        android:textColor="#ffff0000"
+        android:visibility="invisible"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/ed_passwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ed_user"
+        android:layout_below="@+id/ed_user"
+        android:layout_marginTop="19dp"
+        android:ems="16"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        android:text="pengzhaoyang" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ed_passwd"
+        android:layout_alignRight="@+id/ed_passwd"
+        android:layout_below="@+id/ed_passwd"
+        android:layout_marginTop="14dp"
+        android:text="Login"
+        android:textStyle="bold" />
+
+</RelativeLayout>
